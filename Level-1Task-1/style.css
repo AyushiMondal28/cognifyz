@@ -1,0 +1,157 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+nav{
+    width: 100%;
+    height: 80px;
+    background:rgba(32, 178, 171, 0.856);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+nav ul{
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+nav ul li{
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.main-body{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #9198e5d5;
+}
+
+.main-body .intro{
+    width: 50%;
+    text-align: center;
+    height: calc(100vh - 80px);
+    padding: 30px;
+}
+
+.main-body .intro h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aliceblue;
+    font-size: 5rem;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.35);
+    margin-bottom: 20px;
+}
+
+.main-body .intro p{
+    padding: 30px;
+    color: aliceblue;
+    font-size: 2rem;
+    font-style: italic;
+    line-height: 1.5;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.main-body .form{
+    background: #fff;
+    width: 50%;
+    height: calc(100vh - 80px);
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-body .form img{
+    max-height: 320px;
+    margin-bottom: 10px;
+}
+
+.main-body .form form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-body .form form input{
+    height: 30px;
+    width: auto;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 15px;
+}
+
+.main-body .form form button{
+    padding: 10px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+    font-size: 1rem;
+    color: aliceblue;
+    background:#c45dff;
+}
+
+.main-body .form form button:hover{
+    background: #cdb4db;
+}
+
+@media (max-width:1000px) {
+    .main-body{
+        flex-direction: column;
+    }
+
+    .main-body .intro{
+        width: 100%;
+    }
+
+    .main-body .form{
+        position: relative;
+        width: 100%;
+    }
+}
+
+@media (max-width:465px) {
+    nav ul{
+        gap: 30px;
+    }
+    
+    nav ul li{
+        font-size: 1.2rem;
+        font-weight: 500;
+    }    
+
+    .main-body .intro{
+        padding-top: 50px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .main-body .intro h1{
+        font-size: 4rem;
+    }
+
+    .main-body .intro p{
+        font-size: 1.5rem;
+        padding: 20px 0;
+    }
+}
